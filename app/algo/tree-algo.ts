@@ -11,8 +11,8 @@ export class TreeNode {
     
     static CreateTreeInOrder(elements: string[]) {
         if(elements.length === 0) return null;
-        let root: TreeNode = new TreeNode(elements[0]);
-        let queue: TreeNode[] = [root];
+        const root: TreeNode = new TreeNode(elements[0]);
+        const queue: TreeNode[] = [root];
         let i = 1;
         
         while (i < elements.length) {
@@ -35,15 +35,15 @@ export class TreeNode {
     }
     
     static printTree(root: TreeNode) {
-        let Ans: string[][] = [];
-        let queue: TreeNode[] = [];
+        const Ans: string[][] = [];
+        const queue: TreeNode[] = [];
         queue.push(root);
         
         while(queue.length > 0) {
-            let CurrLevel: string[] = [];
-            let size = queue.length;
+            const CurrLevel: string[] = [];
+            const size = queue.length;
             for(let i = 0; i < size; i++) {
-                let curr = queue.shift();
+                const curr = queue.shift();
                 if (!curr) continue;
                 CurrLevel.push(curr.val);
                 if(curr.left) queue.push(curr.left);

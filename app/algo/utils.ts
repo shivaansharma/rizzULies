@@ -7,7 +7,7 @@ export function Generate_random_numbers({values}:{values:number[]}){
 
 export function partition({ low, high, values,swaps}: { low: number, high: number, values: number[] ,swaps:number[][]}): number {
     let i = low - 1;
-    let pivot = values[high]; 
+    const pivot = values[high]; 
     let j = high;
 
     while (true) {
@@ -37,8 +37,8 @@ export function Merge(
     values: number[],
     swaps: number[][]
 ) {
-    let left = values.slice(low, mid + 1);
-    let right = values.slice(mid + 1, high + 1);
+    const left = values.slice(low, mid + 1);
+    const right = values.slice(mid + 1, high + 1);
     let i = 0, j = 0, k = low;
 
     while (i < left.length && j < right.length) {
