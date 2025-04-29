@@ -3,7 +3,6 @@ import { motion,AnimatePresence  } from "framer-motion"
 import { MorphingText } from "@/app/components/magicui/morphing-text"
 import { useState } from "react";
 import Sorting from "../components/sorting";
-import BinaryTrees from "../components/tree";
 import PlayGround from "../components/flow";
 import GraphPlayground from "../components/graph";
 
