@@ -17,7 +17,7 @@ import { TreeNode } from '@/app/algo/tree-algo';
 import '@xyflow/react/dist/style.css';
 
 
-const TreeNodeComponent = ({ data }) => {
+const TreeNodeComponent = ({ data }:{data : any}) => {
   const bgColor = data.highlight ? 'bg-red-500 border-red-700' : 'bg-green-500 border-green-700';
   
   return (
