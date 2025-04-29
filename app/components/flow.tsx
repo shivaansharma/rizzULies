@@ -11,6 +11,7 @@ import {
   Panel,
   Handle,
   Position,
+  BackgroundVariant,
 } from '@xyflow/react';
 import { TreeNode } from '@/app/algo/tree-algo';
  
@@ -387,7 +388,7 @@ export default function TreeVisualizer() {
           deleteKeyCode="Delete"
         >
           <Controls />
-          <Background variant="dots" gap={12} size={1} />
+          <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
           <Panel position="top-left" className="bg-white p-4 rounded-md shadow-md">
             <div className="flex flex-col gap-2">
               <label className="text-sm font-medium">
